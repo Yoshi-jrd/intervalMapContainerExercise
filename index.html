@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltom-O-Tron-Meter</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Voltom-O-Tron-O-Meter</h1>
+    <br>
+    <h3>Choose your own adventure, Dr. Watts style</h3>
+    <h4> You enter the the range you can travel and how much energy it will take to get there! Be careful, any definitions you make will over-ride previous ones</h4>
+    <br>
+    <h4>If you want to resest your definitions, hit this button:</h4>
+    <button id="resetBtn">RESET</button>
+    <div class="inputs">
+        <form action="">
+            <div class="formInputs">
+                <input id="lowerRange" class="userInput" type="number" placeholder="Lower Range">
+                <input id="upperRange" class="userInput" type="number" placeholder="Upper Range">
+                <br>
+                <input id="energy" class="userInput" type="number" placeholder="How Much Energy?">
+            </div>
+        </form>
+        <button id="userSubmitBtn" class="btn">Submit</button>
+    </div>
+    <h3>Now that we have some definitions let's find out how much energy it would take to travel a certain distance.</h3>
+    <div class="resultsDiv">
+        <div class="query">
+            <h3>How far do you want to go?</h3>
+            <input id="queryInput" class="userInput" type="number" placeholder="Enter your number here">
+        </div>
+        <button id="querySubmitBtn" class="btn">Energy Converter</button>
+        <div class="results">
+            <h3>You decided it would take this much energy!</h3>
+            <div class="answer"></div>
+
+        </div>
+    </div>
+
+    <script src="./code.js"></script>
+    <script src="./main.js"></script>
+    <!-- <script src="./unitTests.js"></script> -->
+</body>
+</html>
